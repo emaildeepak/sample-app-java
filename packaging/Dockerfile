@@ -2,7 +2,7 @@ FROM openjdk:11-jre-slim
 ARG WORKDIR="/usr/src/myapp"
 RUN mkdir -p ${WORKDIR}
 WORKDIR ${WORKDIR}
-COPY target/request-0.9.0-SNAPSHOT.jar app.jar
+COPY target/packaging-0.9.0-SNAPSHOT.jar app.jar
 EXPOSE 50050
 #CMD ["java","-Dspring.profiles.active=dev","-jar","app.jar"]
 
